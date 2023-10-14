@@ -3,7 +3,7 @@ pipeline {
   agent { label 'master' }
     tools {
       maven 'Maven'
-      jdk 'JAVA_HOME'
+      jdk env.JAVA_HOME
     }
   stages {
    stage ('Maven Build') {
