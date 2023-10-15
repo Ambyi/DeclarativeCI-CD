@@ -2,8 +2,8 @@ def mvn
 pipeline {
   agent { label 'master' }
     tools {
-      maven env.M2_HOME
-      jdk env.JAVA_HOME
+      maven 'Maven'
+      jdk 'JAVA_HOME'
     }
   stages {
    stage ('Maven Build') {
